@@ -1,0 +1,60 @@
+= Prequiz
+
+== Instructions
+
+Pretend we're taking a closed-book exam and *modify this file* to answer the questions below.
+Don't worry, this is not being graded for correctness: guesses or even admissions of ignorance are okay.
+The point is to asses your knowledge beforehand as a frame of reference.
+
+When you are done:
+
+----
+cd ~/COMP603-2015
+# The easy way
+git gui &
+# The leet way
+git add .
+git commit -m "Finished prequiz"
+git push -u --all origin
+----
+
+== Questions
+
+What is the difference between a set, a bag, and a sequence?
+
+
+What is a language (in terms of sets and sequences)?
+
+
+What is a compiler? Name some.
+
+
+What is an interpreter? How does that differ from a compiler?
+
+
+What is the derivative of a language?
+
+
+What is a regular expression?
+
+
+What is a finite automaton, and what is the difference between an NFA and a DFA?
+
+
+What is a grammar, and what is the difference between regular grammars, context-free grammars, LL(k) and LR(k)?
+
+
+What is the difference between derivative parsing, recursive-descent parsing, shift-reduce parsing and parser combinators?
+
+
+What is a visitor?
+
+
+What is the difference between a parse tree and an abstract syntax tree?
+
+
+Name some optimizations.
+
+
+What questions do you have for me?
+

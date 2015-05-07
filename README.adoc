@@ -1,8 +1,8 @@
 = Compiler Design
 
-== May 7: Git setup
+== May 7: Git setup and prequiz
 
-=== Step 1. Install Git and frontends
+=== Install Git and frontends
 
 [[install-git]]
 Windows:: http://sourceforge.net/projects/gitextensions/[Install Git Extensions]
@@ -20,7 +20,7 @@ http://sourceforge.net/projects/qgit/[QGit, a git frontend] may also be availabl
 +
 NOTE: Don't forget to use +sudo+ with your package manager.
 
-=== Step 2: Run starterupper
+=== Run starterupper
 
 Starterupper sets up git and project hosting for this class;
 it is safe to run even if you already have git and SSH keys set up on your machine.
@@ -30,6 +30,28 @@ Press `Insert` to paste in Git Bash.
 
 ----
 curl https://raw.githubusercontent.com/lawrancej/COMP603-2015/master/main.sh | bash
+----
+
+=== Complete the prequiz
+
+Open up `prequiz.adoc` in your favorite text editor.
+
+WARNING: Do not use Notepad or Word.
+Use a real text editor. Suggestions:
+http://notepad-plus-plus.org/download/v6.7.7.html[Notepad++] (Windows),
+https://atom.io/[Atom],
+or http://www.sublimetext.com/[Sublime].
+
+Then, save your changes and submit your work to your repository.
+
+----
+cd ~/COMP603-2015
+# The easy way
+git gui &
+# The leet way
+git add .
+git commit -m "Finished prequiz"
+git push -u --all origin
 ----
 
 == May 6: Introductions
