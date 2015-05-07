@@ -34,7 +34,7 @@ curl https://raw.githubusercontent.com/lawrancej/COMP603-2015/master/main.sh | b
 
 === Complete the prequiz
 
-Open up `prequiz.adoc` in your favorite text editor.
+Open up `prequiz.adoc` in your favorite text editor (it is in your local git repository).
 
 WARNING: Do not use Notepad or Word.
 Use a real text editor. Suggestions:
