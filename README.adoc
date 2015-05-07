@@ -1,6 +1,6 @@
 = Compiler Design
 
-== January 7: Git setup
+== May 7: Git setup
 
 === Step 1. Install Git and frontends
 
@@ -25,13 +25,13 @@ NOTE: Don't forget to use +sudo+ with your package manager.
 Starterupper sets up git and project hosting for this class;
 it is safe to run even if you already have git and SSH keys set up on your machine.
 
-Open Git Bash (Windows) or Terminal (Linux, Mac OS X) and paste in this command.
+Open Git Bash (Windows) or Terminal (Linux, Mac OS X) and paste in the command below.
 Press `Insert` to paste in Git Bash.
 
 ----
 curl https://raw.githubusercontent.com/lawrancej/COMP603-2015/master/main.sh | bash
 ----
 
-== January 6: Introductions
+== May 6: Introductions
 
 Welcome to Compiler Design!
