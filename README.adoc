@@ -35,3 +35,9 @@ curl https://raw.githubusercontent.com/lawrancej/COMP603-2015/master/main.sh | b
 == May 6: Introductions
 
 Welcome to Compiler Design!
+
+Icebreaker:
+
+* What is your name?
+* Why is Computer Science your major?
+* Tell us something nobody else in the room knows about you.
