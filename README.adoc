@@ -1,5 +1,29 @@
 = Compiler Design
 
+== May 8: Introduction
+
+NOTE: Please read http://www.ethoberon.ethz.ch/WirthPubl/CBEAll.pdf[Chapters 1, 2 and 3 (Pages 6-16)]
+or Chapters 1, 2 and 3 of the Crafting a Compiler textbook by next week.
+If this is overwhelming, read the first sentence of each paragraph,
+then skip subsequent sentences if it made sense, otherwise read on.
+https://github.com/vhf/free-programming-books/blob/master/free-programming-books.md#compiler-design[See this list for other free books].
+
+What is the difference between a set, a bag, and a sequence?
+
+
+
+What is a language (in terms of sets and sequences)?
+
+
+
+What is a compiler? Name some.
+
+
+
+What is an interpreter? How does that differ from a compiler?
+
+
+
 == May 7: Git setup and prequiz
 
 === Install Git and frontends
