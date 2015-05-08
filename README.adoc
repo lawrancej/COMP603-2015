@@ -8,21 +8,70 @@ If this is overwhelming, read the first sentence of each paragraph,
 then skip subsequent sentences if it made sense, otherwise read on.
 https://github.com/vhf/free-programming-books/blob/master/free-programming-books.md#compiler-design[See this list for other free books].
 
-What is the difference between a set, a bag, and a sequence?
+=== What is the difference between a set, a bag, and a sequence?
 
+These are all collections.
 
+A *set* is unordered and has no duplicates (no repeated values).
 
-What is a language (in terms of sets and sequences)?
+----
+{ "hello", "world" } == { "world", "hello" }
+----
 
+A *bag* is unordered and allows duplicates (repeated values).
 
+----
+{ "buffalo", "my", "buffalo" } == { "my", "buffalo", "buffalo" }
+----
 
-What is a compiler? Name some.
+A *sequence* is ordered and allows duplicates.
 
+----
+[ "hello", "cruel", "world" ] != [ "cruel", "world", "hello" ]
+----
 
+An *ordered set* is ordered and has no duplicates.
 
-What is an interpreter? How does that differ from a compiler?
+To summarize:
 
+image:http://lawrancej.github.io/COMP603-2015/scribbles/collections.png[Kinds of collections]
 
+=== What is a language in terms of sets and sequences?
+
+English subset
+
+----
+{
+    "This is a sentence in English.",
+    "This is another sentence in English."
+}
+----
+
+Espanol subseto?
+
+----
+{
+    "Yo quiero Taco Bell",
+    "Donde esta el bano?"
+}
+----
+
+An *alphabet* is a set of symbols (i.e., `char`).
+A *string* is a sequence of symbols chosen from some alphabet.
+
+*Languages* are (possibly infinite) sets of strings.
+A *grammar* constructs a language; *regular expressions* construct *regular* languages.
+
+=== What is a compiler? Name some.
+
+A *compiler* transforms source language into a target language.
+
+javac, gcc, clang, etc.
+
+=== What is an interpreter? How does that differ from a compiler?
+
+An *interpreter* accepts code and runtime data and runs with it.
+We're not generating code.
 
 == May 7: Git setup and prequiz
 
