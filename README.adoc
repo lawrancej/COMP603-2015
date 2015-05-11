@@ -1,5 +1,14 @@
 = Compiler Design
 
+== May 11: Regexen
+
+Cheat at crosswords, the easy way with regexes!
+
+----
+cd ~/COMP603-2015
+grep -E regex american-english.txt
+----
+
 == May 8: Introduction
 
 NOTE: Please read http://www.ethoberon.ethz.ch/WirthPubl/CBEAll.pdf[Chapters 1, 2 and 3 (Pages 6-16)]
@@ -56,7 +65,7 @@ Espanol subseto?
 }
 ----
 
-An *alphabet* is a set of symbols (i.e., `char`).
+An *alphabet* is a set of symbols (e.g., `char`).
 A *string* is a sequence of symbols chosen from some alphabet.
 
 *Languages* are (possibly infinite) sets of strings.
