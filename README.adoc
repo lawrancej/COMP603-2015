@@ -10,6 +10,47 @@ git pull upstream master
 grep -E regex american-english.txt
 ----
 
+A *regular expression* (regex) defines a regular language with three primitives and rules.
+
+[options="header"]
+|===
+|Name |Notation |Meaning
+
+|*Primitives*
+|
+|
+
+|*Empty Set*
+|{}
+|Reject everything.
+
+|*Empty String*
+|+""+
+|Match the empty string.
+
+|*Symbol*
+|`a`
+|Match a single character.
+
+|*Rules*
+|
+|
+
+|*Sequence*
+|`ab`
+|Match regex `a` followed by regex `b`.
+
+|*Alternation*
+|`a\|b`
+|Match regex `a` or match regex `b`, but not both.
+
+|*Kleene Star*
+|`a*`
+|Match regex `a` zero or more times {+""+,`a`,`aa`,`aaa`,...}
+
+|===
+
+
 == May 8: Introduction
 
 NOTE: Please read http://www.ethoberon.ethz.ch/WirthPubl/CBEAll.pdf[Chapters 1, 2 and 3 (Pages 6-16)]
