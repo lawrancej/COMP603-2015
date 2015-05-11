@@ -6,6 +6,7 @@ Cheat at crosswords, the easy way with regexes!
 
 ----
 cd ~/COMP603-2015
+git pull upstream master
 grep -E regex american-english.txt
 ----
 
