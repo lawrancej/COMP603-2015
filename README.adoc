@@ -5,8 +5,8 @@
 === Chomsky again
 
 The Chomsky hierarchy is a containment hierarchy of languages.
-What distinguishes one language category from another is
-restrictions placed on grammars or the underlying automaton.
+Restrictions placed on grammar production rules
+(or the underlying automaton) distinguish among language categories.
 
 image:http://lawrancej.github.io/COMP603-2015/scribbles/chomsky-hierarchy.png[Chomsky hierarchy]
 
@@ -14,24 +14,36 @@ image:http://lawrancej.github.io/COMP603-2015/scribbles/chomsky-hierarchy.png[Ch
 |===
 
 |Language category
-|Description
+|Restrictions on grammar productions
 |Equivalent automaton
 
 |*Recursively-enumerable*
-|Arbitrary sequences of terminals and non-terminals can derive arbitrary sequences of terminals and nonterminals.
-|Finite automaton with infinite tape and read/write head (Turing machine)
+|*None*. Sequences of terminals and non-terminals may derive sequences of terminals and nonterminals.
+|Finite automaton with infinite tape (Turing machine)
 
 |*Context-sensitive*
-|A nonterminal flanked on either side by terminals and nonterminals (the context) derives a nonempty string of terminals or nonterminals surrounded by the same context.
-|Finite automaton with finite tape and read/write head (Linearly-bounded Turing machine)
+|The same *context* (terminals or nonterminals) surrounds both sides of the nonterminal on the left, and the derivation on the right.
+|Finite automaton with finite tape (Linearly-bounded Turing machine)
 
 |*Context-free*
 |Nonterminals derive sequences of terminals and nonterminals.
-|Pushdown automaton (finite state machine with a stack)
+|Finite automaton with a stack (Pushdown automaton)
+
+|*LR*
+|Context-free but *forbids ambiguity*.
+|Shift-reduce (bottom up) parser
+
+|*LL*
+|Context-free, the first and follow sets are disjoint, and forbids: ambiguity, left-recursion, and common prefixes.
+|Recursive descent (top down) parser
 
 |*Regular*
-|A nonterminal can derive a terminal followed by a nonterminal or nothing at all.
+|A nonterminal may derive either terminals followed by a single nonterminal, or the empty string.
 |Finite state machine
+
+|*Finite*
+|A nonterminal may derive terminals or the empty string.
+|Finite state machine without cycles.
 
 |===
 
@@ -82,11 +94,12 @@ the *back-end* consists of translation, optimization and code generation.
 
 === Visitors
 
-They visit, silly!
+Visitors visit (traverse) nodes in a tree to do some computation,
+without mixing computation into the nodes themselves.
 
 === Challenge
 
-Challenge: What's the parse tree for `int a = 5;`?
+Challenge: What's the parse tree for `int a = 5;` using the C Grammar?
 
 == May 11: Regexes and Grammars
 
