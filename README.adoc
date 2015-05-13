@@ -1,10 +1,92 @@
 = Compiler Design
 
-== May 13: Derivatives and compiler terminology
+== May 13: Chomsky, Derivatives, Compilers and Visitors, oh my!
+
+=== Chomsky again
+
+The Chomsky hierarchy is a containment hierarchy of languages.
+What distinguishes one language category from another is
+restrictions placed on grammars or the underlying automaton.
+
+image:http://lawrancej.github.io/COMP603-2015/scribbles/chomsky-hierarchy.png[Chomsky hierarchy]
+
+[cols="3", options="header"]
+|===
+
+|Language category
+|Description
+|Equivalent automaton
+
+|*Recursively-enumerable*
+|Arbitrary sequences of terminals and non-terminals can derive arbitrary sequences of terminals and nonterminals.
+|Finite automaton with infinite tape and read/write head (Turing machine)
+
+|*Context-sensitive*
+|A nonterminal flanked on either side by terminals and nonterminals (the context) derives a nonempty string of terminals or nonterminals surrounded by the same context.
+|Finite automaton with finite tape and read/write head (Linearly-bounded Turing machine)
+
+|*Context-free*
+|Nonterminals derive sequences of terminals and nonterminals.
+|Pushdown automaton (finite state machine with a stack)
+
+|*Regular*
+|A nonterminal can derive a terminal followed by a nonterminal or nothing at all.
+|Finite state machine
+
+|===
+
+=== Derivatives
 
 http://matt.might.net/articles/parsing-with-derivatives/[A discussion of derivatives and parsing with them].
 
+=== Compilers
 
+Compilers consist of these 'phases':
+
+[cols="4", options="header"]
+|===
+|Phase
+|Description
+|Input
+|Output
+
+|*Scan / Tokenize / Lexical analysis*
+|Split source code into small chunks (tokens) such as identifiers, reserved words, literals, operators, etc.
+|Source code
+|Token stream
+
+|*Parse*
+|Check the syntax of the source code
+|Token stream
+|Parse tree
+
+|*Translate*
+|Translate low level syntax into high-level abstract syntax tree
+|Parse tree
+|Abstract syntax tree, symbol table
+
+|*Optimize*
+|Improve performance or structure
+|Abstract syntax tree, symbol table
+|Abstract synatx tree, symbol table
+
+|*Generate code*
+|Traverse the AST to generate code.
+|Abstract syntax tree, symbol table
+|Target code
+
+|===
+
+The *front-end* of a compiler consists of scanning and parsing;
+the *back-end* consists of translation, optimization and code generation.
+
+=== Visitors
+
+They visit, silly!
+
+=== Challenge
+
+Challenge: What's the parse tree for `int a = 5;`?
 
 == May 11: Regexes and Grammars
 
