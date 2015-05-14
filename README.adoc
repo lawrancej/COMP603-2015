@@ -1,5 +1,44 @@
 = Compiler Design
 
+== May 14: Lab 1: Read source
+
+=== Lab 1
+
+Do this individually, or in pairs.
+
+NOTE: If working in a pair, run `./main.sh` from your repo. Log in and click on the added collaborator link.
+Then, go to the next page and copy the command line instructions.
+
+. Choose a single compiler implementation to review (suggestions welcome!)
+
+  * https://github.com/chaoslawful/tcc[Tiny C compiler]
+  * https://github.com/mirrors/gcc[GCC (Compiler for C/C++)]
+  * https://github.com/llvm-mirror/llvm[LLVM (Compiler for C/C++)]
+  * https://github.com/openjdk-mirror/jdk7u-jdk[OpenJDK (Compiler and runtime for Java)]
+  * https://github.com/python/cpython[CPython]
+  * https://bitbucket.org/pypy/pypy[PyPy]
+  * https://github.com/LuaDist/lua[Lua]
+  * https://github.com/ghc/ghc[GHC source (Haskell)]
+  * https://github.com/ghcjs/ghcjs[GHCJS (Haskell to Javascript compiler)]
+  * https://github.com/mozilla/rhino[Java implementation of Javascript]
+  * https://github.com/mono/mono[C# compiler and runtime]
+
+. Identify which files/functions are responsible for each phase in the compiler source.
+. What was the most ridiculous thing you found? (funny comments? awful code?)
+. Take notes along the way (if you find something that's unrelated to a compiler phase, try to infer what it's doing).
+. Write up your findings in a short document and post to your repository (no more than two pages, please). For example:
++
+----
+git add findings.txt
+git commit -m "Lab 1 findings."
+git push origin master
+----
+
+=== Further reading
+
+* http://cm.bell-labs.com/who/ken/trust.html[Reflections on Trusting Trust]
+* https://www.schneier.com/blog/archives/2006/01/countering_trus.html[Countering "Trusting Trust"]
+
 == May 13: Chomsky, Derivatives, Compilers and Visitors, oh my!
 
 === Chomsky again
@@ -39,11 +78,11 @@ image:http://lawrancej.github.io/COMP603-2015/scribbles/chomsky-hierarchy.png[Ch
 
 |*Regular*
 |A nonterminal may derive either terminals followed by a single nonterminal, or the empty string.
-|Finite state machine
+|Finite automaton
 
 |*Finite*
 |A nonterminal may derive terminals or the empty string.
-|Finite state machine without cycles.
+|Finite automaton without cycles.
 
 |===
 
