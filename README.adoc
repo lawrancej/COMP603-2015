@@ -34,6 +34,8 @@ git commit -m "Lab 1 findings."
 git push origin master
 ----
 
+Try to get this done today.
+
 === Further reading
 
 * https://www.ece.cmu.edu/~ganger/712.fall02/papers/p761-thompson.pdf[Reflections on Trusting Trust]
