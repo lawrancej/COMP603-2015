@@ -23,7 +23,7 @@ Then, go to the next page and copy the command line instructions.
   * https://github.com/mozilla/rhino[Java implementation of Javascript]
   * https://github.com/mono/mono[C# compiler and runtime]
 
-. Identify which files/functions are responsible for each phase in the compiler source.
+. Identify which files/functions are responsible for each phase in the compiler source (scan/lex/tokenize, parse, AST, optimization, code generation).
 . What was the most ridiculous thing you found? (funny comments? awful code?)
 . Take notes along the way (if you find something that's unrelated to a compiler phase, try to infer what it's doing).
 . Write up your findings in a short document and post to your repository (no more than two pages, please). For example:
