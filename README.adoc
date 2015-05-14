@@ -36,7 +36,7 @@ git push origin master
 
 === Further reading
 
-* http://cm.bell-labs.com/who/ken/trust.html[Reflections on Trusting Trust]
+* https://www.ece.cmu.edu/~ganger/712.fall02/papers/p761-thompson.pdf[Reflections on Trusting Trust]
 * https://www.schneier.com/blog/archives/2006/01/countering_trus.html[Countering "Trusting Trust"]
 
 == May 13: Chomsky, Derivatives, Compilers and Visitors, oh my!
