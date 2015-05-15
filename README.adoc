@@ -2,7 +2,8 @@
 
 == May 15: Derivations and parsing
 
-Challenge: What's the parse tree for `int a = 5;` using the C Grammar?
+*Challenge*: What's the parse tree for `int a = 5;` using the http://lawrancej.github.io/COMP603-2015/CGrammar.pdf[C Grammar]?
+*Hint*: It's a `declaration`.
 
 == May 14: Lab 1: Read source
 
