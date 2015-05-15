@@ -1,5 +1,9 @@
 = Compiler Design
 
+== May 15: Derivations and parsing
+
+Challenge: What's the parse tree for `int a = 5;` using the C Grammar?
+
 == May 14: Lab 1: Read source
 
 === Lab 1
