@@ -1,5 +1,45 @@
 = Compiler Design
 
+== May 18. Recursive descent parsing LL(k) grammars
+
+Pull from me.
+
+----
+cd ~/COMP603-2015
+git pull upstream master
+# Windows
+start responses/may-18.txt
+# Mac
+open -e responses/may-18.txt
+----
+
+Open `responses/may-18.txt` in your local repository.
+Modify the file to answer the questions.
+
+=== First and follow sets
+
+First set:: the set of terminals that can appear first in any derivation of a nonterminal.
+Follow set:: the set of terminals that can appear first *after* derivation of a nonterminal.
+
+=== LL(k) grammars
+
+LL(k) means parse from *Left* to right, *Leftmost* derivation, with at most *k* tokens of lookahead.
+
+LL(k) grammars are a subset of the context-free grammars. For a grammar to be LL(k):
+
+* The first and follow sets for each nonterminal must be disjoint
+* It must be unambiguous
+* No left-recursion is allowed
+* No common prefixes on the right hand side are allowed
+
+LL(k) grammars can be parsed using 'recursive descent'.
+
+=== Recursive descent parsing
+
+Recursive descent parsing is also known as top-down parsing, because the parse starts from the starting nonterminal.
+Each nonterminal is a function, and the first and follow sets determine which production (rule) to choose.
+See `RecursiveDescent.java` for an example recursive descent parser.
+
 == May 15: Derivations and parsing
 
 *Challenge*: What's the parse tree for `int a = 5;` using the http://lawrancej.github.io/COMP603-2015/CGrammar.pdf[C Grammar]?
