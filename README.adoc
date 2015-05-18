@@ -16,6 +16,11 @@ open -e responses/may-18.txt
 Open `responses/may-18.txt` in your local repository.
 Modify the file to answer the questions.
 
+----
+git commit -am "I got this."
+git push origin master
+----
+
 === First and follow sets
 
 First set:: the set of terminals that can appear first in any derivation of a nonterminal.
