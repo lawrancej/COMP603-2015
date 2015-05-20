@@ -1,6 +1,25 @@
 = Compiler Design
 
-== May 18. Recursive descent parsing LL(k) grammars
+== May 20: Shift-reduce parsing LR(k) grammars
+
+=== LR(k) grammars
+
+LR(k) means *Left* to right, *Rightmost* derivation, with *k* tokens of lookahead.
+
+LR(k) grammars are a subset of the context-free grammars, and a proper superset of the LL(k) grammars (the LL(k) grammars are a proper subset of the LR(k) grammars).
+For a grammar to be LR(k):
+
+* It must be unambiguous
+
+LR(k) grammars can be parsed using 'shift-reduce'.
+
+=== Shift-reduce parsing
+
+Shift-reduce parsing is also known as bottom up parsing, because the parser works from the terminals up to the starting nonterminal.
+A https://www.youtube.com/watch?v=uncfFsbUF68[shift-reduce parser] shifts terminals onto a stack, and reduces the stack to a nonterminal when the stack matches the right hand side of a production (rule).
+Programmers rarely write shift-reduce parsers by hand, and use http://en.wikipedia.org/wiki/Parser_generator[parser generators] or parser combinators instead.
+
+== May 18: Recursive descent parsing LL(k) grammars
 
 Pull from me.
 
@@ -23,8 +42,8 @@ git push origin master
 
 === First and follow sets
 
-First set:: the set of terminals that can appear first in any derivation of a nonterminal.
-Follow set:: the set of terminals that can appear first *after* derivation of a nonterminal.
+First set:: the set of terminals (excluding empty string) that can appear first in any derivation of a nonterminal.
+Follow set:: the set of terminals (ecluding empty string) that can appear first *after* derivation of a nonterminal.
 
 === LL(k) grammars
 
