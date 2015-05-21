@@ -11,7 +11,7 @@ cd ~/COMP603-2015
 git pull upstream master
 ----
 
-Do you have Visual Studio or http://sourceforge.net/projects/mingw/files/latest/download?source=files[GCC] installed?
+Do you have Visual Studio or http://sourceforge.net/projects/codeblocks/files/Binaries/13.12/Windows/codeblocks-13.12mingw-setup.exe[Code Blocks] or XCode installed?
 The starter code, `src/brainfuck.cpp`, is in `C++`.
 
 === Goal
