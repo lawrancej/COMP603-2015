@@ -38,7 +38,7 @@ If your `C++` is rusty, see the http://www.cplusplus.com/reference/[C++ Referenc
 
 Write the recursive descent parser using one of the strategies below.
 
-. *Use mutually recursive functions* as done in `RecursiveDescent.java`.
+. *Use mutually recursive functions* as done in `in-class/RecursiveDescent.java`.
 For each nonterminal in the grammar, write a function with the name of the nonterminal.
 Peek at the next character and figure out which production (rule) to apply based on the first and/or follow sets.
 . Maintain an explicit stack of nodes inside the existing `parse` function.
@@ -120,7 +120,7 @@ LL(k) grammars can be parsed using 'recursive descent'.
 
 Recursive descent parsing is also known as top-down parsing, because the parse starts from the starting nonterminal.
 Each nonterminal is a function, and the first and follow sets determine which production (rule) to choose.
-See `RecursiveDescent.java` for an example recursive descent parser.
+See `in-class/RecursiveDescent.java` for an example recursive descent parser.
 
 == May 15: Derivations and parsing
 
