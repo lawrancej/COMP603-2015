@@ -36,23 +36,25 @@ Loop -> '[' Sequence ']'
 
 If your `C++` is rusty, see the http://www.cplusplus.com/reference/[C++ Reference].
 
-Write the recursive descent parser using one of the strategies below.
+Write the recursive descent parser using any of these strategies:
 
-. *Use mutually recursive functions* as done in `in-class/RecursiveDescent.java`.
+. Write `parse` recursively.
+. Use mutually recursive functions as done in `in-class/RecursiveDescent.java`.
 For each nonterminal in the grammar, write a function with the name of the nonterminal.
 Peek at the next character and figure out which production (rule) to apply based on the first and/or follow sets.
 . Maintain an explicit stack of nodes inside the existing `parse` function.
-. Write `parse` as a recursive function.
 . Use an implicit stack by modifying `Node` to include a pointer to a `parent` Node.
 
 NOTE: Your parser *cannot* avoid using recursion or a stack (implicit or explicit). Don't even.
 
-Stuff child nodes into the appropriate `Container`.
-Thus, `Program` at the top-level, and inside a new `Loop` elsewhere.
+You are done if your program builds a tree structure *correctly*.
+You need to place child nodes into the appropriate `Container`.
+This means `Program` at the top-level, and inside a new `Loop` in the appropriate spots.
 
-You've completed this lab if your program prints the *exact* same program as what your parser read in (including the loop brackets) without modifying `main`.
-In `main`, the program traverses the tree your parser built, using the `Printer` http://en.wikipedia.org/wiki/Visitor_pattern[visitor] to print Brainfuck code.
-Any discrepancy between the program output and input means your parser formed the tree improperly.
+To check your implementation, use the `is-lab2-done.sh` script, or compare program output with input.
+The program traverses the tree your parser built and prints it out with the `Printer` http://en.wikipedia.org/wiki/Visitor_pattern[visitor].
+If the program shows any discrepancy between the program output and input, it means your parser formed the tree improperly.
+Of course, printing out the input file without forming a tree fools the script, but nobody else.
 
 ----
 cd ~/COMP603-2015
