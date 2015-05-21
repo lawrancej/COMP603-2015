@@ -7,7 +7,7 @@
 Go ahead and pull from me:
 
 ----
-cd COMP603-2014
+cd COMP603-2015
 git pull upstream master
 ----
 
