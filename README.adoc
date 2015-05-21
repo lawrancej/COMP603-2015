@@ -47,7 +47,7 @@ Peek at the next character and figure out which production (rule) to apply based
 
 NOTE: Your parser *cannot* avoid using recursion or a stack (implicit or explicit). Don't even.
 
-Stuff child nodes into `Program` at the top-level, and inside `Loop`s elsewhere.
+Stuff child nodes into `Program` at the top-level, and inside a `Loop` elsewhere.
 
 You've completed this lab if your program prints the *exact* same program as what your parser read in (including the loop brackets) without modifying `main`.
 In `main`, the program traverses the tree your parser built, using the `Printer` http://en.wikipedia.org/wiki/Visitor_pattern[visitor] to print Brainfuck code.
