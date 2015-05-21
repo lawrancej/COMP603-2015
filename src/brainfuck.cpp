@@ -73,13 +73,18 @@ class CommandNode : public Node {
         }
 };
 
+class Container: public Node {
+    public:
+        vector<Node*> children;
+        virtual void accept (Visitor * v) = 0;
+};
+
 /**
  * Loop publicly extends Node to accept visitors.
  * Loop represents a loop in Brainfuck.
  */
-class Loop : public Node {
+class Loop : public Container {
     public:
-        vector<Node*> children;
         void accept (Visitor * v) {
             v->visit(this);
         }
@@ -89,9 +94,8 @@ class Loop : public Node {
  * Program is the root of a Brainfuck program abstract syntax tree.
  * Because Brainfuck is so primitive, the parse tree is the abstract syntax tree.
  */
-class Program : public Node {
+class Program : public Container {
     public:
-        vector<Node*> children;
         void accept (Visitor * v) {
             v->visit(this);
         }
@@ -101,7 +105,7 @@ class Program : public Node {
  * Read in the file by recursive descent.
  * Modify as necessary and add whatever functions you need to get things done.
  */
-void parse(fstream & file, Program * program) {
+void parse(fstream & file, Container * container) {
     char c;
     // How to peek at the next character
     c = (char)file.peek();
@@ -111,8 +115,8 @@ void parse(fstream & file, Program * program) {
     file >> c;
     // How to print out that character
     cout << c;
-    // How to insert a node into the program.
-    program->children.push_back(new CommandNode(c));
+    // How to insert a node into the container.
+    container->children.push_back(new CommandNode(c));
 }
 
 /**
