@@ -12,7 +12,7 @@ git pull upstream master
 ----
 
 Do you have Visual Studio or http://sourceforge.net/projects/mingw/files/latest/download?source=files[GCC] installed?
-The starter code, `src/brainfuck.cpp`, is in C\++.
+The starter code, `src/brainfuck.cpp`, is in `C++`.
 
 === Goal
 
@@ -34,7 +34,7 @@ Loop -> '[' Sequence ']'
 
 === Hints
 
-If your C\++ is rusty, see the http://www.cplusplus.com/reference/[C++ Reference].
+If your `C++` is rusty, see the http://www.cplusplus.com/reference/[C++ Reference].
 
 Write the recursive descent parser using one of the strategies below.
 
