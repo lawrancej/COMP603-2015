@@ -7,7 +7,7 @@
 Go ahead and pull from me:
 
 ----
-cd COMP603-2015
+cd ~/COMP603-2015
 git pull upstream master
 ----
 
@@ -57,6 +57,14 @@ NOTE: Any discrepancy between the program output and input means your parser for
 === Deadline
 
 Please complete before the next lab period. In the next lab, we'll write an interpreter for Brainfuck.
+
+Modify `src/brainfuck.cpp` in place, or replace it with your version.
+
+----
+cd ~/COMP603-2015
+git commit -am "Lab 2 done."
+git push origin master
+----
 
 == May 20: Shift-reduce parsing LR(k) grammars
 
