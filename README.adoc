@@ -1,5 +1,63 @@
 = Compiler Design
 
+== May 21: Lab 2. Parsing Brainfuck
+
+=== Preliminaries
+
+Go ahead and pull from me:
+
+----
+cd COMP603-2014
+git pull upstream master
+----
+
+Do you have Visual Studio or http://sourceforge.net/projects/mingw/files/latest/download?source=files[GCC] installed?
+The starter code, `src/brainfuck.cpp`, is in C\++.
+
+=== Goal
+
+Modify `src/brainfuck.cpp` to parse http://en.wikipedia.org/wiki/Brainfuck[Brainfuck] using recursive descent.
+Brainfuck's LL(1) grammar is:
+
+----
+Program -> Sequence
+
+Sequence -> Command Sequence
+Sequence -> Loop Sequence
+Sequence -> any other character, ignore (treat as a comment)
+Sequence -> "" (empty string)
+
+Command -> '+' | '-' | '<' | '>' | ',' | '.'
+
+Loop -> '[' Sequence ']'
+----
+
+=== Hints
+
+If your C\++ is rusty, see the http://www.cplusplus.com/reference/[C++ Reference].
+
+Write the recursive descent parser using one of the strategies below.
+
+. *Use mutually recursive functions* as done in `RecursiveDescent.java`.
+For each nonterminal in the grammar, write a function with the name of the nonterminal.
+Peek at the next character and figure out which production (rule) to apply based on the first and/or follow sets.
+. Maintain an explicit stack of nodes inside the existing `parse` function.
+. Write `parse` as a recursive function.
+. Use an implicit stack by modifying `Node` to include a pointer to a `parent` Node.
+
+NOTE: Your parser *cannot* avoid using recursion or a stack (implicit or explicit). Don't even.
+
+Stuff child nodes into `Program` at the top-level, and inside `Loop`s elsewhere.
+
+You've completed this lab if your program prints the *exact* same program as what your parser read in (including the loop brackets) without modifying `main`.
+In `main`, the program traverses the tree your parser built, using the `Printer` http://en.wikipedia.org/wiki/Visitor_pattern[visitor] to print Brainfuck code.
+
+NOTE: Any discrepancy between the program output and input means your parser formed the tree improperly, and you're not done.
+
+=== Deadline
+
+Please complete before the next lab period. In the next lab, we'll write an interpreter for Brainfuck.
+
 == May 20: Shift-reduce parsing LR(k) grammars
 
 === LR(k) grammars
