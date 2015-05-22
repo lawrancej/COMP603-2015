@@ -48,6 +48,9 @@ Comment -> any character other than '+' | '-' | '<' | '>' | ',' | '.' | '[' | ']
 
 === Hints
 
+The parser will probably be no longer than 20-30 lines.
+To read characters in a loop, `while(file >> c) { ... }`
+
 If your `C++` is rusty, see the http://www.cplusplus.com/reference/[C++ Reference].
 
 Write the recursive descent parser using any of these strategies:
