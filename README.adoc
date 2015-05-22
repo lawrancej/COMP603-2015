@@ -32,6 +32,20 @@ Command -> '+' | '-' | '<' | '>' | ',' | '.'
 Loop -> '[' Sequence ']'
 ----
 
+Brainfuck in EBNF is:
+
+----
+Program -> Sequence
+
+Sequence -> ( Command | Loop | Comment ) *
+
+Command -> '+' | '-' | '<' | '>' | ',' | '.'
+
+Loop -> '[' Sequence ']'
+
+Comment -> any character other than '+' | '-' | '<' | '>' | ',' | '.' | '[' | ']'
+----
+
 === Hints
 
 If your `C++` is rusty, see the http://www.cplusplus.com/reference/[C++ Reference].
