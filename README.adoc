@@ -48,7 +48,7 @@ Comment -> any character other than '+' | '-' | '<' | '>' | ',' | '.' | '[' | ']
 
 === Hints
 
-The parser will probably be no longer than 20-30 lines.
+The parser will probably be no longer than 20-30 lines; the solution is shorter than the problem statement.
 To read characters in a loop, `while(file >> c) { ... }`
 
 If your `C++` is rusty, see the http://www.cplusplus.com/reference/[C++ Reference].
