@@ -1,5 +1,9 @@
 = Compiler Design
 
+== May 22: Moar hints & stuff
+
+See below.
+
 == May 21: Lab 2. Parsing Brainfuck
 
 === Preliminaries
