@@ -185,13 +185,15 @@ int main(int argc, char *argv[]) {
     fstream file;
     Program program;
     Printer printer;
+    Interpreter interpreter;
     if (argc == 1) {
         cout << argv[0] << ": No input files." << endl;
     } else if (argc > 1) {
         for (int i = 1; i < argc; i++) {
             file.open(argv[i], fstream::in);
             parse(file, & program);
-            program.accept(&printer);
+//            program.accept(&printer);
+            program.accept(&interpreter);
             file.close();
         }
     }
