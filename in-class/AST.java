@@ -45,7 +45,13 @@ public class AST {
 		public Id (String id) { this.id = id; }
 		public <T> T accept(Visitor<T> v) { return v.visit(this); }		
 	}
-	public static enum Op { MULTIPLY, DIVIDE, SUBTRACT, ADD };
+	public static enum Op {
+		MULTIPLY, DIVIDE, SUBTRACT, ADD;
+		public char show() {
+			final String operators = "*/-+";
+			return operators.charAt(this.ordinal());
+		}
+	};
 	public static class Operator implements Expression {
 		final Op op;
 		final Expression left;
@@ -129,6 +135,70 @@ public class AST {
 		public Void visit(Operator op) { return null; }
 		public Void visit(Number num) { return null; }
 	}
+	public static class Printer implements Visitor<StringBuilder> {
+		StringBuilder builder = new StringBuilder();
+		int tabs = 0;
+		public StringBuilder visit(Assign assign) {
+			assign.variable.accept(this);
+			builder.append(" = ");
+			assign.value.accept(this);
+			builder.append(";\n");
+			return builder;
+		}
+		public StringBuilder visit(Block block) {
+			for (int i = 0; i < tabs; i++) {
+				builder.append("    ");
+			}
+			builder.append("{\n");
+			tabs++;
+			for (Statement s : block.statements) {
+				for (int i = 0; i < tabs; i++) {
+					builder.append("    ");
+				}
+				s.accept(this);
+			}
+			tabs--;
+			for (int i = 0; i < tabs; i++) {
+				builder.append("    ");
+			}
+			builder.append("}\n");
+			return null;
+		}
+		public StringBuilder visit(Branch branch) {
+			builder.append("if (");
+			branch.predicate.accept(this);
+			builder.append(")\n");
+			branch.ifBranch.accept(this);
+			builder.append("else\n");
+			branch.elseBranch.accept(this);
+			return builder;
+		}
+		public StringBuilder visit(Loop loop) {
+			builder.append("while (");
+			loop.predicate.accept(this);
+			builder.append(" != 0)\n");
+			loop.body.accept(this);
+			return builder;
+		}
+		public StringBuilder visit(Id id) {
+			builder.append(id.id);
+			return builder;
+		}
+		public StringBuilder visit(Operator op) {
+			builder.append("(");
+			op.left.accept(this);
+			builder.append(" ");
+			builder.append(op.op.show());
+			builder.append(" ");
+			op.right.accept(this);
+			builder.append(")");
+			return builder;
+		}
+		public StringBuilder visit(Number num) {
+			builder.append(num.n);
+			return builder;
+		}
+	}
 	public static void main (String[] args) {
 		/*
 		 * Factorial Program equivalent to:
@@ -155,6 +225,9 @@ public class AST {
 				);
 		StatementInterpreter runner = new StatementInterpreter();
 		factorial.accept(runner);
+		Printer printer = new Printer();
+		factorial.accept(printer);
+		System.out.println(printer.builder.toString());
 		/* 
 		 * Print the symbols in the interpreter.
 		 */
