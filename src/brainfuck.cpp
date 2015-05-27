@@ -151,6 +151,36 @@ class Printer : public Visitor {
         }
 };
 
+class Interpreter : public Visitor {
+    public:
+        void visit(const CommandNode * leaf) {
+            switch (leaf->command) {
+                case INCREMENT:
+                    break;
+                case DECREMENT:
+                    break;
+                case SHIFT_LEFT:
+                    break;
+                case SHIFT_RIGHT:
+                    break;
+                case INPUT:
+                    break;
+                case OUTPUT:
+                    break;
+            }
+        }
+        void visit(const Loop * loop) {
+            for (vector<Node*>::const_iterator it = loop->children.begin(); it != loop->children.end(); ++it) {
+                (*it)->accept(this);
+            }
+        }
+        void visit(const Program * program) {
+            for (vector<Node*>::const_iterator it = program->children.begin(); it != program->children.end(); ++it) {
+                (*it)->accept(this);
+            }
+        }
+};
+
 int main(int argc, char *argv[]) {
     fstream file;
     Program program;
