@@ -4,6 +4,8 @@
 
 http://en.wikipedia.org/wiki/Visitor_pattern[Visits?!? Well, that'd indicate visitors].
 
+Pull from upstream and study `in-class/AST.java`. Play code golf.
+
 == May 22: Moar hints & stuff
 
 See updated lab description and hints below.
