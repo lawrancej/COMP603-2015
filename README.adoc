@@ -1,5 +1,9 @@
 = Compiler Design
 
+== May 27: Tree traversal with visitors
+
+http://en.wikipedia.org/wiki/Visitor_pattern[Visits?!? Well, that'd indicate visitors].
+
 == May 22: Moar hints & stuff
 
 See updated lab description and hints below.
