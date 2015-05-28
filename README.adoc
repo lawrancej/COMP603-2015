@@ -24,7 +24,14 @@ Write an interpreter for Brainfuck (this builds on Lab 2).
 
 The program works when it prints out `Hello World!` for `helloworld.bf`
 
+Or, try a program that takes in input, such as `rot13.bf`.
+If you type in `HELLO` (and press Enter), it will print: `URYYB`.
 
+----
+./brainfuck.exe rot13.bf
+HELLO
+URYYB
+----
 
 == May 27: Tree traversal with visitors
 
