@@ -1,5 +1,31 @@
 = Compiler Design
 
+== May 28: Lab 3. Interpreting Brainfuck
+
+=== Preliminaries
+
+Go ahead and fetch and merge from me:
+
+----
+cd ~/COMP603-2015
+git fetch upstream
+git merge upstream/master
+git merge upstream/lab3
+git mergetool
+----
+
+Do you have Visual Studio or http://sourceforge.net/projects/codeblocks/files/Binaries/13.12/Windows/codeblocks-13.12mingw-setup.exe[Code Blocks] or XCode installed?
+The starter code, `src/brainfuck.cpp`, is in `C++`.
+
+=== Goal
+Write an interpreter for Brainfuck (this builds on Lab 2).
+
+=== Hints
+
+The program works when it prints out `Hello World!` for `helloworld.bf`
+
+
+
 == May 27: Tree traversal with visitors
 
 http://en.wikipedia.org/wiki/Visitor_pattern[Visits?!? Well, that'd indicate visitors].
