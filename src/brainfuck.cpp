@@ -152,6 +152,8 @@ class Printer : public Visitor {
 };
 
 class Interpreter : public Visitor {
+    char memory[30000];
+    int pointer;
     public:
         void visit(const CommandNode * leaf) {
             switch (leaf->command) {
@@ -175,6 +177,8 @@ class Interpreter : public Visitor {
             }
         }
         void visit(const Program * program) {
+            // zero init the memory array
+            // set pointer to zero
             for (vector<Node*>::const_iterator it = program->children.begin(); it != program->children.end(); ++it) {
                 (*it)->accept(this);
             }
