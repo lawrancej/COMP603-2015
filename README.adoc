@@ -4,13 +4,15 @@
 
 === Preliminaries
 
-Go ahead and fetch and merge from me:
+Go ahead and fetch and merge from me (don't forget to commit your work first):
 
 ----
 cd ~/COMP603-2015
 git fetch upstream
+# Unable to merge? Stage and commit your changes
 git merge upstream/master
 git merge upstream/lab3
+# Have a CONFLICT?
 git mergetool
 ----
 
