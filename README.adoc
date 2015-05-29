@@ -4,6 +4,8 @@
 
 NOTE: Read http://www.ethoberon.ethz.ch/WirthPubl/CBEAll.pdf[Read through chapter 5].
 
+NOTE: In Lab 3, use `cin.get(mumble)` to read in a char, `cin >> mumble` ignores spaces.
+
 === Parser generators
 
 There are many of them. Here's one for Java.
