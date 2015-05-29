@@ -1,5 +1,30 @@
 = Compiler Design
 
+== May 29: Parsing frameworks
+
+NOTE: Read http://www.ethoberon.ethz.ch/WirthPubl/CBEAll.pdf[Read through chapter 5].
+
+=== Parser generators
+
+There are many of them. Here's one for Java.
+
+A tool that takes a grammar specification in a file, and produces parse code.
+
+Examples: http://www.antlr.org/[ANTLR]
+
+=== Parser combinators
+
+There are many of them.
+
+The parser code isn't a separate tool, it's a library you embed in your program.
+So, you specify a grammar in your code, and let the library do the parse for you.
+
+Examples: Spirit, Parsec
+
+=== Inferring grammars from sequences
+
+http://www.sequitur.info/jair[Sequitur algorithm]
+
 == May 28: Lab 3. Interpreting Brainfuck
 
 === Preliminaries
