@@ -8,11 +8,13 @@ NOTE: In Lab 3, use `cin.get(mumble)` to read in a char, `cin >> mumble` ignores
 
 === Parser generators
 
-http://en.wikipedia.org/wiki/Comparison_of_parser_generators[There are many of them]. Here's one for Java.
+A parser generator is a tool that takes a grammar specification in a file, and produces parse code.
 
-A tool that takes a grammar specification in a file, and produces parse code.
+http://en.wikipedia.org/wiki/Comparison_of_parser_generators[There are many of them].
+Each has severe limitations.
+Since these require a grammar spec, you need to understand the grammar's grammar.
 
-Examples: http://www.antlr.org/[ANTLR]
+Here's one for Java. http://www.antlr.org/[ANTLR]
 
 === Parser combinators
 
