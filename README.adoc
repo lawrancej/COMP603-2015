@@ -8,7 +8,7 @@ NOTE: In Lab 3, use `cin.get(mumble)` to read in a char, `cin >> mumble` ignores
 
 === Parser generators
 
-There are many of them. Here's one for Java.
+http://en.wikipedia.org/wiki/Comparison_of_parser_generators[There are many of them]. Here's one for Java.
 
 A tool that takes a grammar specification in a file, and produces parse code.
 
