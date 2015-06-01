@@ -1,5 +1,11 @@
 = Compiler Design
 
+== June 1: Let's write a compiler (sorta)
+
+. Copypasta the Printer visitor in `src/brainfuck.cpp`.
+. Rename it to Compiler.
+. Instead of printing out Brainfuck code, print out code in a different language.
+
 == May 29: Parsing frameworks
 
 NOTE: Read http://www.ethoberon.ethz.ch/WirthPubl/CBEAll.pdf[Read through chapter 5].
