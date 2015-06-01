@@ -16,6 +16,7 @@ I added `quine.bf` to test lab 3 using the `is-lab-2-done.sh` script because I'm
 
 ----
 git commit -am "WIP" # Commit your stuff if you need to
+git fetch upstream
 git merge upstream/lab3
 git mergetool # if you see a CONFLICT
 ----
