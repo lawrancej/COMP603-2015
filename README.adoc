@@ -74,13 +74,13 @@ The program works when it prints out `Hello World!` for `helloworld.bf`
 
 Study `in-class/AST.java` to get an idea of what you'll need to do.
 
-Or, try a program that takes in input, such as `rot13.bf`.
-If you type in `HELLO` (and press Enter), it will print: `URYYB`.
+Or, try a program that takes in input, such as `echo.bf`.
+If you type in `HELLO` (and press Enter), it will print: `HELLO`.
 
 ----
-./brainfuck.exe rot13.bf
+./brainfuck.exe echo.bf
 HELLO
-URYYB
+HELLO
 ----
 
 == May 27: Tree traversal with visitors
