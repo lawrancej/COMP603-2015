@@ -2,20 +2,40 @@
 
 == June 1: Let's write a compiler (sorta)
 
-`git merge upstream/master`
+=== Announcements
 
+Lab 3 has a new test program, `echo.bf` that just prints out what you type when run.
+`rot13.bf` may not actually work as advertised, derp.
 
-. Copypasta the Printer visitor in `src/brainfuck.cpp`.
-. Rename it to Compiler.
-. Instead of printing out Brainfuck code, print out code in a different language (say, Java or C#). Pick a name for your class.
+Let's talk about http://en.wikipedia.org/wiki/Quine_%28computing%29[quines].
+And https://github.com/mame/quine-relay[quine relays].
+
+I added `quine.bf` to test lab 3 using the `is-lab-2-done.sh` script because I'm that lazy.
+
+=== Preliminaries
+
+----
+git commit -am "WIP" # Commit your stuff if you need to
+git merge upstream/lab3
+git mergetool # if you see a CONFLICT
+----
+
+=== Activity
+
+. Copypasta the `Printer` visitor in `src/brainfuck.cpp`.
+. Rename it to `Compiler`.
+. Instead of printing out Brainfuck code, print out equivalent code for a different language.
+For languages that need it (e.g., Java), pick a name for your program class (e.g., `Default`).
 
 For example, in Java:
 
 ----
-./brainfuck.exe echo.bf > mumble.java
-javac mumble.java
-java Default
+./brainfuck.exe echo.bf > Default.java # Translate brainfuck to java
+javac Default.java # Compile translated Java code
+java Default # Run translated Java bytecode (it should do what echo.bf does)
 ----
+
+Done!
 
 == May 29: Parsing frameworks
 
