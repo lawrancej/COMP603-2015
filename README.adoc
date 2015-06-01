@@ -2,9 +2,20 @@
 
 == June 1: Let's write a compiler (sorta)
 
+`git merge upstream/master`
+
+
 . Copypasta the Printer visitor in `src/brainfuck.cpp`.
 . Rename it to Compiler.
-. Instead of printing out Brainfuck code, print out code in a different language.
+. Instead of printing out Brainfuck code, print out code in a different language (say, Java or C#). Pick a name for your class.
+
+For example, in Java:
+
+----
+./brainfuck.exe echo.bf > mumble.java
+javac mumble.java
+java Default
+----
 
 == May 29: Parsing frameworks
 
