@@ -1,5 +1,9 @@
 = Compiler Design
 
+== June 3: Optimizations
+
+http://en.wikipedia.org/wiki/Optimizing_compiler[There are many of them].
+
 == June 1: Let's write a compiler (sorta)
 
 === Announcements
