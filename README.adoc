@@ -14,7 +14,9 @@ Then, optimize away certain loops (e.g., `[-]` or `[+]`) with a `CommandNode` to
 
 . Modify `Command` to include another command type: `ZERO`
 . Modify the `CommandNode` constructor
-. Either traverse through the tree with an Optimizer visitor to do replacements, or preprocess the input to replace `[-]` or `[+]` with new node types.
+. Either traverse through the tree with an Optimizer visitor to do replacements,
+preprocess the input to replace `[-]` or `[+]` with new node types,
+or in the recursive call to `parse`,  check the `Loop` that we get and emit the proper `CommandNode`
 
 === Hints
 
