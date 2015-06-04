@@ -1,5 +1,27 @@
 = Compiler Design
 
+== June 4: Lab 4. Optimize Brainfuck
+
+Optimize your compiler and interpreter developed in Lab 3.
+
+. Modify +CommandNode+ so that it includes a counter (presumably an +int+ or the like).
+. Modify the parser a bit so that it only emits a command node after it has encountered a full run of the same command. (e.g., +-----+ becomes +CommandNode(\'-', 5)+)
+. Modify the interpreter and compiler accordingly.
+
+In short: do an optimization that performs http://en.wikipedia.org/wiki/Run-length_encoding[run-length encoding] on Brainfuck code.
+
+Then, optimize away certain loops (e.g., `[-]` or `[+]`) with a `CommandNode` to assign zero to the current memory location.
+
+. Modify `Command` to include another command type: `ZERO`
+. Modify the `CommandNode` constructor
+. Either traverse through the tree with an Optimizer visitor to do replacements, or preprocess the input to replace `[-]` or `[+]` with new node types.
+
+=== Hints
+
+Use `peek` to check when to add a command node to the current container.
+
+You can tell the optimizer is working if the code your compiler generates includes numeric literals, and the printer and interpreter still work.
+
 == June 3: Optimizations
 
 http://en.wikipedia.org/wiki/Optimizing_compiler[There are many of them].
