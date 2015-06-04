@@ -22,6 +22,8 @@ Use `peek` to check when to add a command node to the current container.
 
 You can tell the optimizer is working if the code your compiler generates includes numeric literals, and the printer and interpreter still work.
 
+Test out your old brainfuck interpreter on `src/99bottles.bf` and compare it with your optimized brainfuck interpreter. Is it faster?
+
 == June 3: Optimizations
 
 http://en.wikipedia.org/wiki/Optimizing_compiler[There are many of them].
