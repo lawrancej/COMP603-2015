@@ -1,5 +1,21 @@
 = Compiler Design
 
+== June 5: Symbol tables, type checking
+
+Before we begin... http://ridiculousfish.com/blog/posts/will-it-optimize.html[Will it optimize?]
+Also, https://fatiherikli.github.io/programming-language-network/[The programming language network]
+
+=== Symbol tables
+A map among identifiers, scopes and other information (e.g., its type, where it's defined).
+
+* In an interpreter, these can be used for data storage.
+* In a compiler, these are used to generate code.
+
+=== Type checking
+Traverse an AST and verifying that it is put together correctly, and generate errors if not.
+
+https://www.destroyallsoftware.com/talks/useing-youre-types-good[Useing you're types good]
+
 == June 4: Lab 4. Optimize Brainfuck
 
 Optimize your compiler and interpreter developed in Lab 3.
