@@ -23,10 +23,9 @@ How rigidly types are enforced?
 
 Dynamic vs. Static typing::
 When does type-checking happen?
-*Dynamically-typed* languages do this at run-time (e.g., Python, Ruby, Javascript).
-The interpreters for these languages check for type mismatches at runtime.
-*Statically-typed* languages do this at compile-time (e.g., Java, C++, Haskell).
-The compilers for these languages traverse the AST to verify no types are mismatched.
+*Dynamically-typed* languages check type mismatches at run-time (e.g., Python, Ruby, Javascript).
+*Statically-typed* languages check type mismatches at compile-time (e.g., Java, C++, Haskell), by
+traversing (and decorating) the AST.
 
 How to get this wrong: https://www.destroyallsoftware.com/talks/useing-youre-types-good[Useing you're types good]
 
