@@ -1,6 +1,10 @@
 = Compiler Design
 
-== June 8: Single static assignment (SSA) Form
+IMPORTANT: June 18 midterm is coming.
+
+== June 8: SSA and GC
+
+=== Single static assignment (SSA) Form
 
 http://en.wikipedia.org/wiki/Static_single_assignment_form[SSA] is a transformation on code that is a prerequisite for many low-level optimizations, such as dead/duplicate code elimination.
 Think of it like version control for variables.
@@ -54,6 +58,69 @@ print a_3
 ----
 
 |===
+
+=== Garbage collection
+
+Ah memory management. Regardless of how it happens, it must happen, unless you like leaking memory.
+
+It helps to remember modern computer systems give us three kinds of memory:
+
+* Static memory
+* Stack memory
+* Heap memory
+
+Static memory is pretty straighforward: it's a chunk of memory that comes and goes with the program itself, and thus does not grow or shrink over the lifetime of the program.
+Stack memory is managed using, ahem, a stack. (Who'da thunk it?)
+
+When we think of memory management, we're almost certainly thinking about the heap: dynamically-allocated memory from the operating system with no pre-set lifespan.
+Therefore, either the programmer has to specify when the memory is no longer needed, or we can rely on garbage collector to clean up after our mess.
+
+Garbage collection algorithms must know the difference between pointer and an integer.
+This is why C doesn't have it.
+Just kidding, you can do garbage collection in C, but it must be *conservative*: it can't make guarantees that it collected all the garbage.
+
+==== Reference counting
+Strategy::
+  Just count how many things point to this object, and when that count drops to 0, free the object.
+
+Pros::
+* Simple to implement
+* Reasonably fast
+* Reasonably good (if Python uses it, it must be somewhat good)
+
+Cons::
+* Now, every object has to have an extra integer just for the reference count.
+* What happens when you got two objects pointing to each other (like in a circular linked list)? Crap! The reference count never drops to zero, that's what!
+
+==== Tracing (Mark sweep) garbage collection
+There's many variations of http://en.wikipedia.org/wiki/Tracing_garbage_collection[tracing (mark-sweep) garbage collection].
+
+Strategy::
+. Maintain a root set (a set of objects reachable throughout the program and in the current scope of the program).
+. Traverse (trace) the object graph starting from the root set, looking for garbage (objects unreachable from the root set)
+
+Pros::
+* This can deal properly with all garbage, including circular linked lists that nobody else references
+* No space overhead of reference counts
+
+Cons::
+* Naive implementations are slow, and briefly hang programs
+* Not what you'd use when precise timing is important (e.g., launching a rocket, autonomous cars)
+* Essentially, this algorithm is what gave garbage collection its bad reputation
+
+Naive mark sweep::
+  Tracing garbage collection that runs when we're out of memory, and stops the program during garbage collection.
+
+Concurrent/incremental mark sweep::
+  The program still runs during GC (which happens in a separate thread), but marked objects are locked as necessary.
+
+Generational::
+Most objects on the heap are short-lived: they're dynamically allocated and freed almost right away.
+Other objects, fewer in number, live long, productive and happy lives.
+This form of GC moves reachable objects between two or more memory pools called generations, without touching garbage.
+
+NOTE: Good compilers will optimize away as much heap allocation as possible using http://en.wikipedia.org/wiki/Escape_analysis[escape analysis], checking at compile time to see if an object could be referenced outside a function. If not, allocate on the stack.
+
 
 
 == June 5: Symbol tables, type checking
