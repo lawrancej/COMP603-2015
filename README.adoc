@@ -1,5 +1,61 @@
 = Compiler Design
 
+== June 8: Single static assignment (SSA) Form
+
+http://en.wikipedia.org/wiki/Static_single_assignment_form[SSA] is a transformation on code that is a prerequisite for many low-level optimizations, such as dead/duplicate code elimination.
+Think of it like version control for variables.
+Each variable gets a new version number when an assignment is made, hence single assignment.
+If we have multiple branches (i.e., loops or conditionals), we need to merge different variable versions together (denoted by the phi function).
+
+|===
+
+|Pseudocode |SSA form
+
+a|Basic block:
+
+----
+a = 5
+a = a + 10
+print a
+----
+
+a|SSA Basic block:
+
+----
+a_0 = 5
+a_1 = a_0 + 10
+print a_1
+----
+
+a|Conditional
+
+----
+a = 5
+if (a < 10) {
+   a++
+} else {
+   a--
+}
+a = a * 2
+print a
+----
+
+a|SSA conditional
+
+----
+a_0 = 5
+if (a_0 < 10) {
+   a_1 = a_0 + 1
+} else {
+   a_2 = a_0 - 1
+}
+a_3 = phi(a_1,a_2) * 2
+print a_3
+----
+
+|===
+
+
 == June 5: Symbol tables, type checking
 
 Before we begin... http://ridiculousfish.com/blog/posts/will-it-optimize.html[Will it optimize?]
