@@ -4,7 +4,11 @@ IMPORTANT: June 18 midterm is coming.
 
 == June 10: Midterm practice?
 
-Here's an old midterm for practice purposes. `exams/Midterm1.pdf`
+Pull from me: `git pull upstream master`
+
+Take a look at an old midterm for practice purposes: `start exams/Midterm1.pdf`
+
+Had any difficulty? Let's discuss.
 
 == June 8: SSA and GC
 
