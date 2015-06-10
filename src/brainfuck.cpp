@@ -24,7 +24,8 @@ typedef enum {
     SHIFT_LEFT, // <
     SHIFT_RIGHT, // >
     INPUT, // ,
-    OUTPUT // .
+    OUTPUT, // .
+    ZERO, // 0
 } Command;
 
 // Forward references. Silly C++!
@@ -58,7 +59,8 @@ class Node {
 class CommandNode : public Node {
     public:
         Command command;
-        CommandNode(char c) {
+        int count;
+        CommandNode(char c, int n) {
             switch(c) {
                 case '+': command = INCREMENT; break;
                 case '-': command = DECREMENT; break;
@@ -67,6 +69,7 @@ class CommandNode : public Node {
                 case ',': command = INPUT; break;
                 case '.': command = OUTPUT; break;
             }
+            count = n;
         }
         void accept (Visitor * v) {
             v->visit(this);
@@ -116,7 +119,7 @@ void parse(fstream & file, Container * container) {
     // How to print out that character
     cout << c;
     // How to insert a node into the container.
-    container->children.push_back(new CommandNode(c));
+    container->children.push_back(new CommandNode(c,1));
 }
 
 /**
@@ -127,13 +130,15 @@ void parse(fstream & file, Container * container) {
 class Printer : public Visitor {
     public:
         void visit(const CommandNode * leaf) {
-            switch (leaf->command) {
-                case INCREMENT:   cout << '+'; break;
-                case DECREMENT:   cout << '-'; break;
-                case SHIFT_LEFT:  cout << '<'; break;
-                case SHIFT_RIGHT: cout << '>'; break;
-                case INPUT:       cout << ','; break;
-                case OUTPUT:      cout << '.'; break;
+            for (int i = 0; i < leaf->count; i++) {
+                switch (leaf->command) {
+                    case INCREMENT:   cout << '+'; break;
+                    case DECREMENT:   cout << '-'; break;
+                    case SHIFT_LEFT:  cout << '<'; break;
+                    case SHIFT_RIGHT: cout << '>'; break;
+                    case INPUT:       cout << ','; break;
+                    case OUTPUT:      cout << '.'; break;
+                }
             }
         }
         void visit(const Loop * loop) {
