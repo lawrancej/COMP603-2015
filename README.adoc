@@ -2,6 +2,10 @@
 
 IMPORTANT: June 18 midterm is coming.
 
+== June 10: Midterm practice?
+
+Here's an old midterm for practice purposes. `exams/Midterm1.pdf`
+
 == June 8: SSA and GC
 
 === Single static assignment (SSA) Form
