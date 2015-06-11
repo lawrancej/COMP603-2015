@@ -2,6 +2,42 @@
 
 IMPORTANT: June 18 midterm is coming.
 
+== June 11: Lab 5. Finish up prior labs, and try this out for kicks
+
+Perform static analysis of Java code.
+
+. http://www.graphviz.org/Download..php[Download and install Graphviz]
+. Fork and clone https://github.com/lawrancej/jdt-project[jdt-project].
+. Next, add +JAVA_HOME+ to your environment variables:
++
+Windows: Search for "environment variables" and click 'Edit the system environment variables'. Click 'Environment Variables...' -> 'New...'
++
+Variable name: +JAVA_HOME+
++
+Variable value: +C:\Program Files\Java\jdk1.8.0_05+ (or whatever version you're using)
+. Click OK, OK, OK.
++
+Close and reopen Git Bash. If you get the same error, https://www.youtube.com/watch?v=nn2FB1P_Mn8&feature=kp[try turning it off and on again]
+. Import the project into eclipse.
++
+----
+./gradlew eclipse
+----
++
+'File' -> 'Import' -> 'General' -> 'Existing projects into workspace'
+. Read through the code. Open +Main+ and run it. Nothing will happen. You'll need to supply the root folder of a Java project to +main+.
++
+Go to 'Run Configurations' -> 'Main' -> 'Arguments' -> 'Program arguments'. Enter the path to a Java project. Click 'Run'. If you have no other Java projects, you can supply the source of +jdt-project+ to itself. Huzzah!
+. Modify AstVisitor to do one of the following (pick one):
+
+* Generate UML class diagram for source code (Show members of classes) http://www.graphviz.org/content/datastruct[See this for insipration]
+* Generate a graph of class dependencies (Type uses Types) http://www.graphviz.org/content/softmaint[See this for inspiration]
+* Generate a graph of package dependencies (Package uses Packages)
+* Generate a graph of method dependencies (Method uses Methods)
+* Generate a graph of class inheritance / interface implementation
+* Suggest some other graph-related static analysis
+
+
 == June 10: Midterm practice?
 
 Pull from me: `git pull upstream master`
@@ -9,6 +45,16 @@ Pull from me: `git pull upstream master`
 Take a look at an old midterm for practice purposes: `start exams/Midterm1.pdf`
 
 Had any difficulty? Let's discuss.
+
+Bootstrapping::
+Making a compiler "self-hosting" so that the compiler can be https://www.ece.cmu.edu/~ganger/712.fall02/papers/p761-thompson.pdf[written in the language it compiles].
+The first C compiler was written in a different language.
+
+Nondeterminism::
+Having more than one option about which state to visit next.
+
+Ambiguity::
+Having more than one parse tree for a given input.
 
 == June 8: SSA and GC
 
