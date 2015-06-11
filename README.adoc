@@ -23,6 +23,8 @@ Close and reopen Git Bash. If you get the same error, https://www.youtube.com/wa
 . Import the project into eclipse.
 +
 ----
+git clone git@github.com:lawrancej/jdt-project.git
+cd jdt-project
 ./gradlew eclipse
 ----
 +
