@@ -4,6 +4,8 @@ IMPORTANT: June 18 midterm is coming.
 
 == June 11: Lab 5. Finish up prior labs, and try this out for kicks
 
+=== Preliminaries
+
 Perform static analysis of Java code.
 
 . http://www.graphviz.org/Download..php[Download and install Graphviz]
@@ -29,6 +31,8 @@ Close and reopen Git Bash. If you get the same error, https://www.youtube.com/wa
 +
 Go to 'Run Configurations' -> 'Main' -> 'Arguments' -> 'Program arguments'. Enter the path to a Java project. Click 'Run'. If you have no other Java projects, you can supply the source of +jdt-project+ to itself. Huzzah!
 . Modify AstVisitor to do one of the following (pick one):
+
+=== Lab (choose your own adventure)
 
 * Generate UML class diagram for source code (Show members of classes) http://www.graphviz.org/content/datastruct[See this for insipration]
 * Generate a graph of class dependencies (Type uses Types) http://www.graphviz.org/content/softmaint[See this for inspiration]
