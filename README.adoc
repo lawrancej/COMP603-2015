@@ -36,6 +36,12 @@ Go to 'Run Configurations' -> 'Main' -> 'Arguments' -> 'Program arguments'. Ente
 
 === Lab (choose your own adventure)
 
+Modify ASTVisitor subclass to do something interesting.
+
+http://help.eclipse.org/juno/index.jsp?topic=%2Forg.eclipse.jdt.doc.isv%2Freference%2Fapi%2Forg%2Feclipse%2Fjdt%2Fcore%2Fdom%2FASTVisitor.html[Documentation for ASTVisitor]
+
+For example:
+
 * Generate UML class diagram for source code (Show members of classes) http://www.graphviz.org/content/datastruct[See this for insipration]
 * Generate a graph of class dependencies (Type uses Types) http://www.graphviz.org/content/softmaint[See this for inspiration]
 * Generate a graph of package dependencies (Package uses Packages)
