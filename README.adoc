@@ -14,6 +14,8 @@ IMPORTANT: June 18 midterm is coming.
 
 == June 15: Midterm review
 
+* http://www.bloomberg.com/graphics/2015-paul-ford-what-is-code/[Hey, check this out].
+
 == June 12: Midterm review
 
 == June 11: Lab 5. Finish up prior labs, and try this out for kicks
