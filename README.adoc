@@ -8,7 +8,7 @@ IMPORTANT: June 18 midterm is coming.
 
 == June 19: Group project kick-off
 
-For our project, we'll begin after we're done with our common labs (there're done!).
+For our project, we'll begin after we're done with our common labs (they're done!).
 You're welcome to work with as few or as many people as you wish either in this section or others.
 Start thinking about which of these you'd like to do, or suggest new ideas.
 
@@ -26,6 +26,11 @@ These projects build upon tools like http://clang.llvm.org/docs/Tooling.html[cla
 * Automated refactoring tool for existing languages to serve education and large projects
 * Search engine for identifiers and literals in code that makes good recommendations, (e.g., http://en.wikipedia.org/wiki/Pagerank[PageRank])
 * Something like http://en.wikipedia.org/wiki/QuickCheck[Quickcheck], but can http://en.wikipedia.org/wiki/Characterization_test[generate characterization tests automatically] and efficiently.
+
+Here's some starter code:
+
+* http://github.com/lawrancej/jdt-project[Parse and traverse Java code]
+* http://github.com/lawrancej/clang-project[Parse and traverse C/C++ code]
 
 
 == June 18: Midterm
