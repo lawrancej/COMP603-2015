@@ -12,14 +12,15 @@ For our project, we'll begin after we're done with our common labs (they're done
 You're welcome to work with as few or as many people as you wish either in this section or others.
 Start thinking about which of these you'd like to do, or suggest new ideas.
 
-You're welcome to pursue these traditional project ideas:
+You're welcome to pursue these traditional project ideas of implementing a small language:
 
-* Implement some moderately simple language, like say, http://en.wikipedia.org/wiki/Cool_(programming_language)[Cool] or http://www.buildyourownlisp.com/[LISP].
-* Something compiler-related that dovetails nicely with Senior project.
+* Implement some moderately simple language, like say, http://en.wikipedia.org/wiki/Cool_(programming_language)[Cool], http://www.buildyourownlisp.com/[LISP], http://llvm.org/docs/tutorial/LangImpl1.html[Kaleidoscope] or https://en.wikipedia.org/wiki/PL/0[PL/0].
+* Something compiler-related that dovetails nicely with Senior project (e.g., a textual command interface to some game, web or mobile app).
 
 These ideas are also welcome:
 
-* A parser combinator library to target multiple parsing strategies (derivative, shift-reduce, or recursive descent parsing).
+* A http://matt.might.net/articles/parsing-with-derivatives/[parser combinator library] to target multiple parsing strategies (derivative, shift-reduce, or recursive descent parsing).
+* https://www.semanticmerge.com/[Semantic merge, but for something like JSON or XML]
 
 These projects build upon tools like http://clang.llvm.org/docs/Tooling.html[clang] (for C/C++), http://www.vogella.com/tutorials/EclipseJDT/article.html[JDT] (for Java), https://docs.python.org/2/library/ast.html[Python's ast module] to do work:
 
@@ -32,6 +33,10 @@ Here's some starter code:
 * http://github.com/lawrancej/jdt-project[Parse and traverse Java code]
 * http://github.com/lawrancej/clang-project[Parse and traverse C/C++ code]
 
+Also, esoteric languages are good for laughs:
+
+* https://esolangs.org/wiki/Language_list[Esoteric languages]
+* https://github.com/lhartikk/ArnoldC[ArnoldC] (it's not a tumor!)
 
 == June 18: Midterm
 
