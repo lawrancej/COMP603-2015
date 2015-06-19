@@ -2,11 +2,31 @@
 
 IMPORTANT: June 18 midterm is coming.
 
-== June 24: Group project kick-off
+== June 24: 
 
 == June 22: Post-midterm review
 
-== June 19: Post-midterm review
+== June 19: Group project kick-off
+
+For our project, we'll begin after we're done with our common labs (there're done!).
+You're welcome to work with as few or as many people as you wish either in this section or others.
+Start thinking about which of these you'd like to do, or suggest new ideas.
+
+You're welcome to pursue these traditional project ideas:
+
+* Implement some moderately simple language, like say, http://en.wikipedia.org/wiki/Cool_(programming_language)[Cool] or http://www.buildyourownlisp.com/[LISP].
+* Something compiler-related that dovetails nicely with Senior project.
+
+These ideas are also welcome:
+
+* A parser combinator library to target multiple parsing strategies (derivative, shift-reduce, or recursive descent parsing).
+
+These projects build upon tools like http://clang.llvm.org/docs/Tooling.html[clang] (for C/C++), http://www.vogella.com/tutorials/EclipseJDT/article.html[JDT] (for Java), https://docs.python.org/2/library/ast.html[Python's ast module] to do work:
+
+* Automated refactoring tool for existing languages to serve education and large projects
+* Search engine for identifiers and literals in code that makes good recommendations, (e.g., http://en.wikipedia.org/wiki/Pagerank[PageRank])
+* Something like http://en.wikipedia.org/wiki/QuickCheck[Quickcheck], but can http://en.wikipedia.org/wiki/Characterization_test[generate characterization tests automatically] and efficiently.
+
 
 == June 18: Midterm
 
