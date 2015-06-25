@@ -18,6 +18,7 @@ Discuss project ideas, and write them up in `README` or in your issue tracker.
 === Setup a repo (even if you have no friends or ideas)
 Yes, everybody does this, not just the team lead.
 If the project has one central repo, then every push forces a merge, which is a bad thing.
+Either have separate repos or separate branches to push to.
 
 . https://github.com/new[Create a repo]
 . Be sure to add `lawrancej` to your collaborators (Go to: Settings -> Collaborators), so I can see your repo.
