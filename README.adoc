@@ -4,24 +4,27 @@ IMPORTANT: June 18 midterm is coming.
 
 == June 25: Lab 6. Team and project selection, repo setup
 
-=== Pick some friends
-For best results, don't go it alone. Groups of 2-5 work best.
+=== Get some friends (solo projects are sad projects)
+
+For best results, please don't go it alone. Groups of 2-5 work best.
 Don't be shy, but we'll skip the icebreaker. :-)
 
+=== Get some ideas (and discuss them)
 
-=== Pick ideas (discuss them)
 See June 19 for some lame ideas.
 Remember the goal: grammars, pointers and recursion, oh my! :-)
 Discuss project ideas, and write them up in `README` or in your issue tracker.
 
-=== Setup a repo
+=== Setup a repo (even if you have no friends or ideas)
+Yes, everybody does this, not just the team lead.
+If the project has one central repo, then every push forces a merge, which is a bad thing.
 
-. Everybody: https://github.com/new[Create a repo]
-. Everybody: Be sure to add `lawrancej` to your collaborators (Go to: Settings -> Collaborators), so I can see your repo.
-. Everybody: clone your repo (`git clone` the SSH URL)
-. `cd` your-repo
-. `git remote add` your-friend-here their-url
-. `git fetch --all`
+. https://github.com/new[Create a repo]
+. Be sure to add `lawrancej` to your collaborators (Go to: Settings -> Collaborators), so I can see your repo.
+. Clone your repo (`git clone` the SSH URL)
+. Go into your repo (`cd` your-repo)
+. Add your friend's remote (`git remote add` your-friends-name their-url)
+. Fetch their stuff (`git fetch --all`)
 
 == June 24: Canceled :-(
 
