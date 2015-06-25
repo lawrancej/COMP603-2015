@@ -7,9 +7,10 @@ IMPORTANT: June 18 midterm is coming.
 === Pick some friends
 We'll skip the icebreaker. :-)
 
-=== Pick or steal ideas
+=== Pick ideas (discuss them)
 See June 19 for some lame ideas.
 Remember the goal: grammars, pointers and recursion, oh my! :-)
+Discuss project ideas, and write them up in `README` or in your issue tracker.
 
 === Setup a repo
 
