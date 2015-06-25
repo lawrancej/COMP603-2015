@@ -4,16 +4,21 @@ IMPORTANT: June 18 midterm is coming.
 
 == June 25: Lab 6. Team and project selection, repo setup
 
-. Pick some friends
-. Pick or steal an idea
+=== Pick some friends
+We'll skip the icebreaker. :-)
 
-Setup a repo
+=== Pick or steal ideas
+See June 19 for some lame ideas.
+Remember the goal: grammars, pointers and recursion, oh my! :-)
+
+=== Setup a repo
 
 . Everybody: https://github.com/new[Create a repo]
 . Everybody: Be sure to add `lawrancej` to your collaborators (Go to: Settings -> Collaborators), so I can see your repo.
 . Everybody: clone your repo (`git clone` the SSH URL)
 . `cd` your-repo
 . `git remote add` your-friend-here their-url
+. `git fetch --all`
 
 == June 24: Canceled :-(
 
