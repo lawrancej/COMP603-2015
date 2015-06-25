@@ -5,7 +5,9 @@ IMPORTANT: June 18 midterm is coming.
 == June 25: Lab 6. Team and project selection, repo setup
 
 === Pick some friends
+For best results, don't go it alone. Groups of 2-5 work best.
 Don't be shy, but we'll skip the icebreaker. :-)
+
 
 === Pick ideas (discuss them)
 See June 19 for some lame ideas.
