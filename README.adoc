@@ -1,6 +1,19 @@
 = Compiler Design
 
-IMPORTANT: June 18 midterm is coming.
+== June 29: Off-site
+
+* 9am: Starbucks 283 Longwood Ave, Boston, MA 02115
+
+== June 26: Cool things on the internet
+
+I got nothing.
+
+* http://spacexstats.com/mission.php?launch=24[SpaceX launch]
+* https://www.ets.org/Media/Tests/MFT/pdf/mft_samp_questions_compsci.pdf[Major field test]
+* https://www-01.ibm.com/support/knowledgecenter/SS9H2Y_7.1.0/com.ibm.dp.doc/json_jsonxconversionexample.html[WTF]
+* https://github.com/oyvindrobertsen/awesome-awesome[Awesome lists]
+* https://www.youtube.com/watch?v=ZzsK8Am6dKU[Parsing with derivatives]
+* https://www.youtube.com/watch?v=Ahg6qcgoay4[Awareness test]
 
 == June 25: Lab 6. Team and project selection, repo setup
 
