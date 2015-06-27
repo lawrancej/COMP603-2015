@@ -3,12 +3,14 @@
 == June 29: Off-site
 
 * 9am: Starbucks 283 Longwood Ave, Boston, MA 02115
+* 11am: J.P. Licks Mission Hill 1618 Tremont St Boston, MA 02120
 
 == June 26: Cool things on the internet
 
 I got nothing.
 
 * http://spacexstats.com/mission.php?launch=24[SpaceX launch]
+* https://www.youtube.com/watch?v=Ki_Af_o9Q9s[Awesome landing]
 * https://www.ets.org/Media/Tests/MFT/pdf/mft_samp_questions_compsci.pdf[Major field test]
 * https://www-01.ibm.com/support/knowledgecenter/SS9H2Y_7.1.0/com.ibm.dp.doc/json_jsonxconversionexample.html[WTF]
 * https://github.com/oyvindrobertsen/awesome-awesome[Awesome lists]
