@@ -1,5 +1,22 @@
 = Compiler Design
 
+== July 6:
+
+=== Linkers
+
+http://www.iecc.com/linker/[All you ever wanted to know about linkers]
+
+=== Project stuff
+
+For the remaining labs, we'll update each other on our progress.
+
+During each lab period, each team should have answers to these questions.
+
+. What did you do? (Nothing isn't a good answer to that question)
+. Did you achieve what you set out to achieve from the prior week?
+. What are you struggling with or what obstacles do you face?
+. What do you plan to achieve by next week?
+
 == June 29: Off-site
 
 * 9am: Starbucks 283 Longwood Ave, Boston, MA 02115
