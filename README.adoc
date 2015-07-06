@@ -4,7 +4,13 @@
 
 === Linkers
 
+Did you know https://en.wikipedia.org/wiki/Grace_Hopper[Grace Hopper] gave compilers their name?
+What she was referring to was what is now known as linkers and loaders.
+
 http://www.iecc.com/linker/[All you ever wanted to know about linkers]
+
+Develop for Android? Use http://proguard.sourceforge.net/[Proguard] is like gc for linking.
+It removes un-referenced objects from classfiles.
 
 === My own crappy project
 
