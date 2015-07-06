@@ -6,6 +6,10 @@
 
 http://www.iecc.com/linker/[All you ever wanted to know about linkers]
 
+=== My own crappy project
+
+https://github.com/lawrancej/use-the-generated-name[A derivate-based parsing framework]
+
 === Project stuff
 
 For the remaining labs, we'll update each other on our progress.
