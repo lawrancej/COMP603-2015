@@ -14,7 +14,7 @@ It removes un-referenced objects from classfiles.
 
 === My own crappy project
 
-https://github.com/lawrancej/use-the-generated-name[A derivate-based parsing framework]
+https://github.com/lawrancej/use-the-generated-name[A derivative-based parsing framework]
 
 === Project stuff
 
