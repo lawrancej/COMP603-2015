@@ -1,6 +1,11 @@
 = Compiler Design
 
-== July 6:
+== July 8: Microoptimizations and more project stuff
+
+* http://www.smallmemory.com/book.html[Patterns for writing small memory software]
+* http://www.smallmemory.com/PatternSummaries.pdf[Summary (PDF)]
+
+== July 6: Linkers and project stuff
 
 === Linkers
 
