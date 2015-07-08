@@ -2,8 +2,21 @@
 
 == July 8: Microoptimizations and more project stuff
 
+How to optimize
+
 * http://www.smallmemory.com/book.html[Patterns for writing small memory software]
 * http://www.smallmemory.com/PatternSummaries.pdf[Summary (PDF)]
+
+What to optimize
+
+* http://brofiler.com/[Brofiler]
+* https://visualvm.java.net/[VisualVM]
+
+When to optimize
+
+Later, because: Premature optimization is the root of all evil. -- Donald Knuth
+
+Also: http://needsmorejpeg.com/[Needs more jpeg]
 
 == July 6: Linkers and project stuff
 
