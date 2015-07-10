@@ -1,5 +1,10 @@
 = Compiler Design
 
+== July 10: Random stuff
+
+* http://cube-drone.com/comics/c/relentless-persistence[Javascript problems and solutions]
+* http://www.cl.cam.ac.uk/~rja14/book.html[Security Engineering]
+
 == July 8: Microoptimizations and more project stuff
 
 How to optimize
