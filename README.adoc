@@ -5,6 +5,17 @@
 * http://cube-drone.com/comics/c/relentless-persistence[Javascript problems and solutions]
 * http://www.cl.cam.ac.uk/~rja14/book.html[Security Engineering]
 
+=== Parsing hints:
+
+If you're parsing an arbitrary grammar, may I suggest using a https://en.wikipedia.org/wiki/Comparison_of_parser_generators[parsing tool]:
+
+* http://boost-spirit.com/home/[Parsing tool for C++]
+* http://www.antlr.org/[Parsing tool for Java]
+* http://www.dabeaz.com/ply/[Parsing tool for Python]
+* http://pegjs.org/[Parsing tool for Javascript]
+
+NOTE: If you're parsing http://github.com/lawrancej/clang-project[C++], http://github.com/lawrancej/jdt-project[Java], or https://docs.python.org/2/library/ast.html[Python] itself, please use existing compilers as a starting point.
+
 == July 8: Microoptimizations and more project stuff
 
 How to optimize
