@@ -14,6 +14,8 @@ Also: Looking for a target language? http://jasmin.sourceforge.net/[How about JV
 
 Also: http://blog.codinghorror.com/quantity-always-trumps-quality/[Get motivated]
 
+Don't forget https://en.wikipedia.org/wiki/Hofstadter%27s_law[Hofstadter's law]!
+
 == July 10: Random stuff
 
 * http://cube-drone.com/comics/c/relentless-persistence[Javascript problems and solutions]
