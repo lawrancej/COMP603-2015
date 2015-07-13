@@ -10,6 +10,8 @@ Status update for all. Please populate your README with these:
 * What do you hope to accomplish by next week? How? (Who's doing what, if this is a team?)
 * What do you need to move forward?
 
+Also: Looking for a target language? http://jasmin.sourceforge.net/[How about JVM]?
+
 == July 10: Random stuff
 
 * http://cube-drone.com/comics/c/relentless-persistence[Javascript problems and solutions]
