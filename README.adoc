@@ -2,6 +2,8 @@
 
 == July 13: Status update
 
+http://doodle.com/zrc2txi57bupe9c2[Team project scheduling]
+
 Status update for all. Please populate your README with these:
 
 * What are you working on?
