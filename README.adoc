@@ -12,6 +12,8 @@ Status update for all. Please populate your README with these:
 
 Also: Looking for a target language? http://jasmin.sourceforge.net/[How about JVM]?
 
+Also: http://blog.codinghorror.com/quantity-always-trumps-quality/[Get motivated]
+
 == July 10: Random stuff
 
 * http://cube-drone.com/comics/c/relentless-persistence[Javascript problems and solutions]
