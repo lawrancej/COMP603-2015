@@ -1,5 +1,15 @@
 = Compiler Design
 
+== July 13: Status update
+
+Status update for all. Please populate your README with these:
+
+* What are you working on?
+* What's your implementation language?
+* What have you done so far? Did you meet your expectations for this week yet?
+* What do you hope to accomplish by next week? How? (Who's doing what, if this is a team?)
+* What do you need to move forward?
+
 == July 10: Random stuff
 
 * http://cube-drone.com/comics/c/relentless-persistence[Javascript problems and solutions]
